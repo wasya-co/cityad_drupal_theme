@@ -1,0 +1,17 @@
+{
+    "name": "wasya-co/cityad_drupal_theme",
+    "type": "drupal-theme",
+    "description": "Cityad Drupal Theme",
+    "homepage": "https://wasya.co/projects/cityad_drupal_theme",
+    "authors": [
+        {
+        "name": "Victor Pudeyev",
+        "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "drupal/core": "^10 || ^11"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
