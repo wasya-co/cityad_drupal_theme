@@ -90,7 +90,7 @@
           {% endif %}
           </nav>
         {% endif %}
-        <nav{{ navbar_attributes }}>
+        <nav{{ navbar_attributes.addClass('fixed-container') }}>
           {% if container_navbar %}
           <div class="container">
           {% endif %}
@@ -146,7 +146,7 @@
 {% block footer %}
         <div class="{{ container }}">
           {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-            <div class="site-footer__top clearfix">
+            <div class="site-footer__top fixed-container clearfix">
               {{ page.footer_first }}
               {{ page.footer_second }}
               {{ page.footer_third }}
