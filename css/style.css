@@ -1,1 +1,1 @@
-:root{--text-color: black}body{background:#efe}.Card,.node--view-mode-teaser{background:white;border:1px solid var(--text-color)}
+body{background:var(--bg-color)}.Card,.node--view-mode-teaser{background:white;border:1px solid var(--text-color)}

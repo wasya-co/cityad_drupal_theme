@@ -1,10 +1,7 @@
 
-:root {
-  --text-color: black;
-}
 
 body {
-  background: #efe;
+  background: var(--bg-color);
 }
 
 .Card,
