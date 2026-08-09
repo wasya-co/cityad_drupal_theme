@@ -1,0 +1,9 @@
+# Schema for the configuration files of the CityAd Drupal Theme.
+
+cityad_drupal_theme.settings:
+  type: bootstrap_barrio.settings
+  label: 'Cityad Drupal Theme settings'
+  mapping:
+    fancy_header:
+      type: boolean
+      label: 'Fancy header'
