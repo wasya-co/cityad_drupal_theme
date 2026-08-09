@@ -3,11 +3,10 @@ type: theme
 description: cityad theme'
 core_version_requirement: ^10.3 || ^11
 base theme: bootstrap_barrio
+screenshot: screenshot.png
 
 libraries:
-  - cityad_drupal_theme/bootstrap
-  - cityad_drupal_theme/global-styling
-  - ish_drupal_module/card
+  - cityad_drupal_theme/main
 
 regions:
   top_header: 'Top header'
