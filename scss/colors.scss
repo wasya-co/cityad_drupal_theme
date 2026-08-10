@@ -1,6 +1,31 @@
 
 :root {
   --text-color: black;
-  --bg-color: #efe;
+  // --bg-color: #efe; // 238 255 238
+  // --bg-color-transparent: rgba(238, 255, 238, 0.5);
+  --bg-color: #fbfdce;
+  --bg-color-transparent: rgba(253, 254, 231, 0.5);
+
   --bg-color-2: white;
+
+  --header-bg: rgba(0,0,0, 0.5);
+  --header-bg-scrolled: rgba(0,0,0, 0.2);
+
+  --header-color: white;
+  --header-link-color: white;
+
+
 }
+
+.btn-primary {
+  color: var(bg-color);
+  background-color: #27d137;
+}
+a {
+  color: #27d137;
+  text-decoration: none;
+}
+a:hover {
+  color: #005303;
+}
+
