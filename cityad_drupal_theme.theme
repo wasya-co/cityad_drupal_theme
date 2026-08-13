@@ -1,15 +1,23 @@
 <?php
 
-/**
- * @file
- * Functions to support theming in the CityAd Drupal Theme.
- */
+use Drupal\Core\Form\FormStateInterface;
 
-/**
- * Implements hook_preprocess_HOOK() for page templates.
- */
+/*
+**/
 function cityad_drupal_theme_preprocess_page(array &$variables) {
   if (theme_get_setting('fancy_header')) {
     $variables['#attached']['library'][] = 'ish_drupal_module/fancy_header';
   }
-}
+
+  $footer_image_hero = theme_get_setting('footer_image_hero');
+  // var_dump($footer_image_hero);
+  if ($footer_image_hero) {
+    $footer_image_hero = reset($footer_image_hero);
+    $file = \Drupal\file\Entity\File::load($footer_image_hero);
+    // var_dump($file);
+    if ($file) {
+      $variables['footer_image_hero'] = $file->createFileUrl();
+    }
+  }
+
+} // end cityad_drupal_theme_preprocess_page
