@@ -4,20 +4,51 @@ use Drupal\Core\Form\FormStateInterface;
 
 /*
 **/
+function city_drupal_theme_preprocess_node(array &$variables) {
+  $node = $variables['node'];
+
+  if ($variables['view_mode'] == 'full') {
+
+    $field_image_hero = $node->get('field_image_hero');
+    if ($field_image_hero->isEmpty()) {
+      $field_image_hero_definition = $field_image_hero->getFieldDefinition();
+      $default = $field_image_hero_definition->getDefaultValue($node);
+      if (!empty($default[0]['target_id'])) {
+        $image = \Drupal::entityTypeManager()
+          ->getStorage('file')
+          ->load($default[0]['target_id']);
+        if ($image) {
+          $variables['image_hero_url'] = \Drupal::service('file_url_generator')
+            ->generateString($image->getFileUri());
+        }
+      }
+    } else {
+      $image = $field_image_hero->entity;
+      if ($image) {
+        $variables['image_hero_url'] = \Drupal::service('file_url_generator')
+          ->generateString($image->getFileUri());
+      }
+    }
+
+  }
+
+} // end city_drupal_theme_preprocess_node
+
+/*
+**/
 function cityad_drupal_theme_preprocess_page(array &$variables) {
   if (theme_get_setting('fancy_header')) {
     $variables['#attached']['library'][] = 'ish_drupal_module/fancy_header';
   }
 
   $footer_image_hero = theme_get_setting('footer_image_hero');
-  // var_dump($footer_image_hero);
   if ($footer_image_hero) {
     $footer_image_hero = reset($footer_image_hero);
     $file = \Drupal\file\Entity\File::load($footer_image_hero);
-    // var_dump($file);
     if ($file) {
       $variables['footer_image_hero'] = $file->createFileUrl();
     }
   }
 
 } // end cityad_drupal_theme_preprocess_page
+
