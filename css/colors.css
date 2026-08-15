@@ -3,7 +3,10 @@
   --bg-color: #F8F3E8 ;
   --bg-color-2: white;
   --bg-color-3: #4A3326;
+  --bg-color-4: rgba(48,48,48, 0.7);
   --bg-color-transparent: rgba(253, 254, 231, 0.5);
+  --emphasis-color: #FFC107;
+  --emphasis-color-2: #DFAF00;
   --header-bg: rgba(0,0,0, 0.5);
   --header-bg-scrolled: rgba(0,0,0, 0.2);
   --header-color: white;
@@ -12,11 +15,6 @@
   --link-color-2: #005303;
   --bs-link-color: var(--link-color);
   --bs-link-hover-color: var(--link-color-2); }
-
-.btn-primary:hover {
-  color: var(--bg-color);
-  background-color: var(--link-color-2);
-  border-color: var(--link-color-2); }
 
 .node--view-mode-card h2 a,
 .node--view-mode-teaser h2 a {
@@ -39,8 +37,14 @@ a:focus,
   color: var(--link-color); }
 
 .btn-primary {
-  color: var(bg-color);
-  background-color: var(--link-color); }
+  color: var(--bg-color);
+  background-color: var(--link-color);
+  border-color: var(--emphasis-color-2, var(--bg-color)); }
+
+.btn-primary:hover {
+  color: var(--bg-color);
+  background-color: var(--link-color-2);
+  border-color: var(--link-color-2); }
 
 a {
   color: var(--link-color);
@@ -51,6 +55,16 @@ a:hover {
 
 /* footer */
 .site-footer {
-  background-color: var(--bg-color-3); }
+  background-color: var(--bg-color-3);
+  padding-bottom: 0; }
+  .site-footer ul.nav {
+    display: flex;
+    flex-direction: column; }
+  .site-footer ul.nav a,
   .site-footer ul.navbar-nav a {
     color: var(--header-link-color); }
+
+.site-footer__bottom {
+  background-color: var(--bg-color-4, var(--bg-color-3)); }
+  .site-footer__bottom .region {
+    margin-top: 0; }

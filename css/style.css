@@ -40,6 +40,3 @@ body {
 .node--view-mode-teaser {
   background: var(--bg-color-2, white);
   border: 1px solid var(--text-color, gray); }
-
-article .image-hero:first-child {
-  background-attachment: fixed; }

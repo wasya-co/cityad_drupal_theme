@@ -197,12 +197,15 @@
               {{ page.footer_fourth }}
             </div>
           {% endif %}
-          {% if page.footer_fifth %}
-            <div class="site-footer__bottom fixed-container">
+
+        </div>
+        {% if page.footer_fifth %}
+          <div class="site-footer__bottom">
+            <div class="fixed-container">
               {{ page.footer_fifth }}
             </div>
-          {% endif %}
-        </div>
+          </div>
+        {% endif %}
       {% endblock %}
     </footer>
   </div>
