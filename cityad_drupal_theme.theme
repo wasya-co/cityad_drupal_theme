@@ -87,7 +87,7 @@ function cityad_drupal_theme_preprocess_node(array &$variables) {
  * Implements hook_preprocess_HOOK() for page templates.
 **/
 function cityad_drupal_theme_preprocess_page(array &$variables) {
-  // $variables['#attached']['library'][] = 'bootstrap_barrio/global-styling:';
+  $variables['#attached']['library'][] = 'cityad_drupal_theme/mavericks';
 
   $variables['theme_custom_css'] = theme_get_setting('field_custom_css');
 

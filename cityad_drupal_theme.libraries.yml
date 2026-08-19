@@ -26,3 +26,8 @@ main:
     component:
       css/style.css: {}
       css/colors.css: {}
+
+mavericks:
+  css:
+    component:
+      css/mavericks.css: {}
