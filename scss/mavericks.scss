@@ -1,5 +1,6 @@
 
-.region-top-header-form {
+.region-top-header-form,
+.region-featured-bottom-first {
   nav.navigation {
     ul {
       display: flex;
@@ -14,4 +15,33 @@
 
 .AdvancedBlock.home-open-wednesday {
   background-color: #b32d2c;
+}
+
+.region-featured-bottom-first {
+  nav.navigation {
+    ul {
+      li {
+        margin-right: 1em;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.featured-bottom {
+  background-color: #4589c1;
+}
+.site-footer {
+  padding: 0;
+}
+.site-footer__top {
+  display: none;
+}
+
+.site-footer__bottom {
+  margin-top: 0;
+  background-color: #171a2e;
 }
