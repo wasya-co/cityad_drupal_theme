@@ -90,10 +90,12 @@ function cityad_drupal_theme_preprocess_node(array &$variables) {
  * Implements hook_preprocess_HOOK() for page templates.
 **/
 function cityad_drupal_theme_preprocess_page(array &$variables) {
-  $config = \Drupal::config('ish_drupal_module.settings');
+  $config = \Drupal::config('cityad_drupal_theme.settings');
   $libraries = $config->get('load_libraries') ?? [];
-  foreach ($libraries as $library) {
-    $attachments['#attached']['library'][] = "cityad_drupal_theme/{$library}";
+  foreach ($libraries as $library => $value) {
+    if ($value) {
+      $attachments['#attached']['library'][] = "cityad_drupal_theme/{$library}";
+    }
   }
 
   $variables['theme_custom_css'] = theme_get_setting('field_custom_css');
