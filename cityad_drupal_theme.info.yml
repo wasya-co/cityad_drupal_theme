@@ -7,6 +7,7 @@ screenshot: screenshot.png
 
 libraries:
   - cityad_drupal_theme/main
+  - cityad_drupal_theme/mavericks
 
 regions:
   top_header: 'Top header'
@@ -33,6 +34,4 @@ regions:
   footer_fifth: 'Footer fifth'
 
 # Information added by Drupal.org packaging script on 2025-06-10
-version: '5.5.24'
-project: 'bootstrap_barrio'
-datestamp: 1749525787
+version: '5.6.0'

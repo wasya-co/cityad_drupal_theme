@@ -1,3 +1,7 @@
 0.0.1 :: 2026-08-09 :: add fancy_header theme setting; attach ish_drupal_module/fancy_header when enabled
 0.0.0 :: 2026-08-09 :: this theme accompanies ish_drupal_module
   v0.0.2 :: 2026-08-15 :: deploy this separately to staging.pudeyev.com
+0.1.0 :: 2026-08-27 :: no more fancy_header. and you chose which libraries to load, with a check box
+
+
+
