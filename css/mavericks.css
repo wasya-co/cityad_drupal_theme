@@ -4,10 +4,17 @@
   flex-direction: row; }
 
 .AdvancedBlock.home-checkout-schedule {
-  background-color: #4489c1; }
+  padding: 3em; }
 
 .AdvancedBlock.home-open-wednesday {
   background-color: #b32d2c; }
+
+.home-contactW {
+  padding: 3em; }
+
+.home-contact-simple .content {
+  padding: 1em;
+  background: #9b9b9b; }
 
 .region-featured-bottom-first nav.navigation ul li {
   margin-right: 1em; }
@@ -19,9 +26,6 @@
 
 .site-footer {
   padding: 0; }
-
-.site-footer__top {
-  display: none; }
 
 .site-footer__bottom {
   margin-top: 0;
