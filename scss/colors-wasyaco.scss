@@ -1,0 +1,33 @@
+
+
+/*
+ * wasyaco colors
+**/
+
+:root {
+  --text-color: red;
+
+  --bg-color: #F8F3E8 ; // #fcfcf3; // #fbfdce;
+  --bg-color-2: white;
+
+  --bg-color-transparent: rgba(253, 254, 231, 0.5);
+
+  --emphasis-color: #FFC107; // #FFD600;
+  --emphasis-color-2: #DFAF00;
+
+  /* footer */
+  --footer-bg: #b3b3b3;
+
+  /* last footer color */
+  --footer-bg-2: rgba(48,48,48, 0.7);
+
+
+  --header-bg: rgba(0,0,0, 0.5);
+  --header-bg-scrolled: rgba(0,0,0, 0.2);
+
+  --header-color: white;
+  --header-link-color: white;
+
+  --link-color: #5c8464; // #31513A; // #27d137;
+  --link-color-2: #005303;
+}

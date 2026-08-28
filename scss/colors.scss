@@ -1,32 +1,22 @@
 
 :root {
-  --text-color: black;
-  // --bg-color: #efe; // 238 255 238
-  // --bg-color-transparent: rgba(238, 255, 238, 0.5);
-  --bg-color: #F8F3E8 ; // #fcfcf3; // #fbfdce;
-  --bg-color-2: white;
-  --bg-color-3: #4A3326; // #5A4030; // #3B2A20; // 5A4030
-  --bg-color-4: rgba(48,48,48, 0.7);
-  --bg-color-transparent: rgba(253, 254, 231, 0.5);
+  --header-bg: #ddd;
+  --header-bg-scrolled: #ccc;
 
-  --emphasis-color: #FFC107; // #FFD600;
-  --emphasis-color-2: #DFAF00;
-
-
-  --header-bg: rgba(0,0,0, 0.5);
-  --header-bg-scrolled: rgba(0,0,0, 0.2);
-
-  --header-color: white;
-  --header-link-color: white;
-
-  --link-color: #5c8464; // #31513A; // #27d137;
-  --link-color-2: #005303;
   --bs-link-color: var(--link-color);
   --bs-link-hover-color: var(--link-color-2);
 }
 
 
+body {
+  background: var(--bg-color);
+}
 
+.Card,
+.node--view-mode-teaser {
+  background: var(--bg-color-2, white);
+  border: 1px solid var(--text-color, gray);
+}
 
 .node--view-mode-card h2 a,
 .node--view-mode-teaser h2 a{
@@ -72,15 +62,9 @@ a:hover {
 
 /* footer */
 
+.featured-bottom,
 .site-footer {
-  background-color: var(--bg-color-3);
-
-  padding-bottom: 0;
-
-  ul.nav {
-    display: flex;
-    flex-direction: column;
-  }
+  background: var(--footer-bg);
 
   ul.nav,
   ul.navbar-nav {
@@ -91,9 +75,5 @@ a:hover {
 
 }
 .site-footer__bottom {
-  background-color: var(--bg-color-4, var(--bg-color-3));
-
-  .region {
-    margin-top: 0;
-  }
+  background-color: var(--footer-bg-2, var(--footer-bg));
 }

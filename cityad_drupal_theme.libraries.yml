@@ -22,4 +22,4 @@ main:
 mavericks:
   css:
     component:
-      css/mavericks.css: {}
+      css/custom-mavericks.css: {}

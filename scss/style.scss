@@ -1,12 +1,4 @@
 
 @import "./comments.scss";
-
-body {
-  background: var(--bg-color);
-}
-
-.Card,
-.node--view-mode-teaser {
-  background: var(--bg-color-2, white);
-  border: 1px solid var(--text-color, gray);
-}
+@import "./colors.scss";
+@import "./colors-wasyaco.scss";
