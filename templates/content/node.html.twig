@@ -15,8 +15,6 @@
 
 {# {{ dump( label ) }} #}
 
-<article{{ attributes.addClass(classes) }}>
-
   {% if view_mode == 'full' %}
     {# {% set image_hero = node.field_image_hero.entity %}
     {% if image_hero %}
@@ -26,6 +24,8 @@
       <div class="image-hero" style="background-image: url('{{ image_hero_url }}');"></div>
     {% endif %}
   {% endif %}
+
+<article{{ attributes.addClass(classes) }}>
 
   <header>
     {{ title_prefix }}
