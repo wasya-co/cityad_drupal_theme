@@ -37,22 +37,21 @@ function cityad_drupal_theme_form_system_theme_settings_alter(&$form, FormStateI
     ],
   ];
 
-  // $form['#submit'][] = 'cityad_drupal_theme_settings_submit';
+  $form['#submit'][] = 'cityad_drupal_theme_settings_submit';
 }
 
-/* trash, works without this.
-**/
-// function cityad_drupal_theme_settings_submit($form, FormStateInterface $form_state) {
-//   $file_ids = $form_state->getValue('footer_image_hero');
-//   if (!empty($file_ids)) {
-//     $file_id = reset($file_ids);
-//     $file = \Drupal\file\Entity\File::load($file_id);
-//     if ($file) {
-//       $file->setPermanent();
-//       $file->save();
-//     }
-//   }
-// }
+
+function cityad_drupal_theme_settings_submit($form, FormStateInterface $form_state) {
+  $file_ids = $form_state->getValue('footer_image_hero');
+  if (!empty($file_ids)) {
+    $file_id = reset($file_ids);
+    $file = \Drupal\file\Entity\File::load($file_id);
+    if ($file) {
+      $file->setPermanent();
+      $file->save();
+    }
+  }
+}
 
 
 
