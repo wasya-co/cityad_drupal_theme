@@ -59,6 +59,11 @@ function cityad_drupal_theme_settings_submit($form, FormStateInterface $form_sta
 function cityad_drupal_theme_preprocess_node(array &$variables) {
   $node = $variables['node'];
 
+  // for sidebar of articles, correcting NOT showing title of main node on page.
+  if ($variables['view_mode'] === 'full' && node_is_page($variables['node'])) {
+    $variables['page'] = TRUE;
+  }
+
   if ($variables['view_mode'] == 'full') {
     if ($node->hasField('field_image_hero')) {
 

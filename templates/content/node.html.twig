@@ -25,6 +25,19 @@
     {% endif %}
   {% endif %}
 
+{# <h1>
+  page {{ dump( page ) }}
+  view_mode {{ dump(view_mode) }}
+  node id {{ dump(node.id()) }}
+  url: {{ dump( url ) }}
+  route name: {{ dump(route_name) }}
+  route_node_id {{ dump(route_node_id) }}
+  rendered_node_id {{ dump(rendered_node_id) }}
+  is_page_check {{ dump(is_page_check) }}
+  view.storage.id {{ dump(view ? view.storage.id() : 'no view') }}
+  view: {{ dump(node.view) }}
+</h1> #}
+
 <article{{ attributes.addClass(classes) }}>
 
   <header>

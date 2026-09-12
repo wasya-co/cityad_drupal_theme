@@ -1,1 +1,21 @@
-:root{--text-color: red;--bg-color: #F8F3E8 ;--bg-color-2: white;--bg-color-transparent: rgba(253, 254, 231, 0.5);--emphasis-color: #FFC107;--emphasis-color-2: #DFAF00;--footer-bg: #b3b3b3;--footer-bg-2: rgba(48,48,48, 0.7);--header-bg: rgba(221,221,221, 0.4);--header-bg-scrolled: rgba(255,255,255, 0.7);--header-link-color: black;--link-color: #5c8464;--link-color-2: #005303}
+/*
+ * wasyaco colors
+**/
+:root {
+  --text-color: red;
+  --bg-color: #F8F3E8 ;
+  --bg-color-2: white;
+  --bg-color-transparent: rgba(253, 254, 231, 0.5);
+  --emphasis-color: #FFC107;
+  --emphasis-color-2: #DFAF00;
+  /* footer */
+  --footer-bg: #b3b3b3;
+  /* last footer color */
+  --footer-bg-2: rgba(48,48,48, 0.7);
+  --header-bg: rgba(221,221,221, 0.4);
+  --header-bg-scrolled: rgba(255,255,255, 0.7);
+  --header-menu-hover-bg: #eee;
+  --header-menu-hover-bg-scrolled: #eee;
+  --header-link-color: black;
+  --link-color: #5c8464;
+  --link-color-2: #005303; }
