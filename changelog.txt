@@ -3,6 +3,7 @@
   v0.0.2 :: 2026-08-15 :: deploy this separately to staging.pudeyev.com
 0.1.0 :: 2026-08-27 :: no more fancy_header. and you chose which libraries to load, with a check box
   v0.0.3 :: 2026-09-07 :: lets deploy staging.wasyaco.com
+  v0.1.3 :: 2026-09-13 :: apparently every fixed-container must also be a container
 
 
 
