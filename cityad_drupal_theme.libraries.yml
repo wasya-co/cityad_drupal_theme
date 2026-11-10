@@ -10,16 +10,21 @@ color.preview:
   dependencies:
     - color/drupal.color
 
+colors_irowor:
+  css:
+    component:
+      css/colors-irowor.css: {}
+
+custom_mavericks:
+  css:
+    component:
+      css/custom-mavericks.css: {}
+
 main:
   version: VERSION
   js:
     js/global.js: {}
   css:
     component:
-      css/style.css: {}
-      css/colors.css: {}
+      css/index.css: {}
 
-mavericks:
-  css:
-    component:
-      css/custom-mavericks.css: {}

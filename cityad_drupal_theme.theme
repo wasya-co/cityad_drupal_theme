@@ -12,7 +12,8 @@ function cityad_drupal_theme_form_system_theme_settings_alter(&$form, FormStateI
     '#type' => 'checkboxes',
     '#title' => t('Load libraries'),
     '#options' => [
-      'mavericks' => 'mavericks',
+      'colors_irowor' => 'colors_irowor',
+      'custom_mavericks' => 'custom_mavericks',
     ],
     '#default_value' => theme_get_setting('load_libraries') ?? [],
     '#description' => t('Selected libraries will be loaded on all pages.'),
