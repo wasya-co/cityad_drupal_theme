@@ -34,6 +34,8 @@ section.field--type-comment {
     margin: 1em 5em; } }
 
 :root {
+  --header-link-color: white;
+  --header-scrolled-bg: white;
   --bg-color: white;
   --bg-2-color: #dedede;
   --bs-link-color: var(--link-color);
