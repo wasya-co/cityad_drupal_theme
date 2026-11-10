@@ -1,5 +1,7 @@
 :root {
   --header-link-color: white;
+  --header-scrolled-link-color: black;
+  --header-bg: transparent;
   --header-scrolled-bg: white;
   --bg-color: white;
   --bg-2-color: #dedede;

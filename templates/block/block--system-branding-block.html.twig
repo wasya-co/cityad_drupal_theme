@@ -8,6 +8,8 @@
  *
  * Available variables:
  * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - logo_dol: DOL logo image from theme settings.
+ * - logo_lod: LOD logo image from theme settings.
  * - site_name: Name for site as defined in Site information settings.
  * - site_slogan: Slogan for site as defined in Site information settings.
  */
@@ -16,10 +18,16 @@
 {% set attributes = attributes.addClass('site-branding') %}
 
 <div class='system-branding'>
-  {% if site_logo or site_name %}
+  {% if site_logo or logo_dol or logo_lod or site_name %}
     <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="navbar-brand">
       {% if site_logo %}
-        <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-fluid d-inline-block align-top" />
+        <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-fluid site-logo" />
+      {% endif %}
+      {% if logo_dol %}
+        <img src="{{ logo_dol }}" alt="{{ 'Logo DOL'|t }}" class="img-fluid logo-dol" />
+      {% endif %}
+      {% if logo_lod %}
+        <img src="{{ logo_lod }}" alt="{{ 'Logo LOD'|t }}" class="img-fluid logo-lod" />
       {% endif %}
       {{ site_name }}
     </a>

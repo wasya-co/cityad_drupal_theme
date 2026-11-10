@@ -7,3 +7,15 @@ cityad_drupal_theme.settings:
     fancy_header:
       type: boolean
       label: 'Fancy header'
+    logo_dol:
+      type: sequence
+      label: 'Logo DOL image'
+      sequence:
+        type: integer
+        label: 'File ID'
+    logo_lod:
+      type: sequence
+      label: 'Logo LOD image'
+      sequence:
+        type: integer
+        label: 'File ID'
