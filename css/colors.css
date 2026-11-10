@@ -6,11 +6,13 @@
   --bg-color: white;
   --bg-2-color: #dedede;
   --bs-link-color: var(--link-color);
-  --bs-link-hover-color: var(--link-color-2);
+  --bs-link-hover-color: var(--link-2-color);
   /* footer */
   --footer-bg: #b3b3b3;
   /* last footer */
-  --footer-bg-2: rgba(48,48,48, 0.7); }
+  --footer-bg-2: rgba(48,48,48, 0.7);
+  --link-color: black;
+  --link-2-color: var(--link-color); }
 
 body {
   background: var(--bg-color); }
@@ -22,7 +24,7 @@ body {
 
 .node--view-mode-card h2 a,
 .node--view-mode-teaser h2 a {
-  color: var(--link-color-2); }
+  color: var(--link-2-color); }
 
 a,
 .btn-link,
@@ -43,19 +45,19 @@ a:focus,
 .btn-primary {
   color: var(--bg-color);
   background-color: var(--link-color);
-  border-color: var(--emphasis-color-2, var(--bg-color)); }
+  border-color: var(--emphasis-color, var(--link-color)); }
 
 .btn-primary:hover {
   color: var(--bg-color);
-  background-color: var(--link-color-2);
-  border-color: var(--link-color-2); }
+  background-color: var(--link-2-color);
+  border-color: var(--link-2-color); }
 
 a {
   color: var(--link-color);
   text-decoration: none; }
 
 a:hover {
-  color: var(--link-color-2); }
+  color: var(--link-2-color); }
 
 /* footer */
 .featured-bottom,
