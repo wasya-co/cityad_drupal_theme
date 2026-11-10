@@ -3,8 +3,18 @@
   // --header-bg: #ddd;
   // --header-bg-scrolled: #ccc;
 
+  --bg-color: white;
+  --bg-2-color: #dedede;
+
+
   --bs-link-color: var(--link-color);
   --bs-link-hover-color: var(--link-color-2);
+
+  /* footer */
+  --footer-bg: #b3b3b3;
+
+  /* last footer */
+  --footer-bg-2: rgba(48,48,48, 0.7);
 }
 
 
@@ -14,7 +24,7 @@ body {
 
 .Card,
 .node--view-mode-teaser {
-  background: var(--bg-color-2, white);
+  background: var(--bg-2-color, white);
   border: 1px solid var(--text-color, gray);
 }
 
